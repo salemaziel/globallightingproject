@@ -1,9 +1,9 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="">
+<!--<p align="center">
+  <a href="http://globallightingproject.com/images/logo.png">
     <img alt="GlobalLightingProject" src="http://globallightingproject.com/images/logo.png" width="60" />
   </a>
-</p>
+</p>-->
 <h1 align="center">
   Global Lighting Project new website
 </h1>
