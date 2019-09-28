@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/*** ### Navigation ### ***/
+.Humburger-Navbar {
+	display: none;
+}
+
+.navigation {
+	position: relative;
+	background: #FFF;
+	height: 100px;
+	line-height: 100px;
+	display: block;
+}
+.logo-img-fluid {
+	width: 270px;
+	/* height: 60px */
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    background-color: #F0AF00;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #F0AF00;
+    display: block;
+    transition: all 0.2s ease;
+    font-family: 'Montserrat';
+	font-weight: bold;
+
+}
+
+
+.list {
+    background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 50%, #F0AF00 50%);
+    background-size: 220%;
+}
+
+.list:hover,
+.list:active {
+    color: #F0AF00;
+    text-decoration: none;
+    transform: scale(0.9);
+    background-position: 100%;
+}
+
+
+.closebtn:hover {
+    color: #F0AF00;
+    text-decoration: none;
+    transform: scale(0.8)
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openNavBtn {
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.openNavBtn:hover {
+    color: #F0AF00;
+    transform: scale(1.2)
+}
+
+
+.logo-site {
+	position: relative;
+	text-align: left;
+}
+.logo-site .iner {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	max-width:350px;
+}
+.navigation nav {
+	margin: 0px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	width: 100%;
+	text-align: left;
+}
+.navigation nav ul {
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
+	text-align:center;
+}
+.navigation nav ul li {
+	padding: 0px;
+	display: inline-block;
+	margin: 0px 0px 0px 20px;
+}
+.navigation nav ul li a {
+	text-decoration: none;
+	color: #2a2a2a;
+	cursor: pointer;
+	font-size:16px;
+	font-weight:600;
+	text-transform:uppercase;
+}
+.navigation nav ul li a:hover {
+	text-decoration: none;
+	color: #2a2a2a;
+}
+.navigation nav ul li a:focus {
+	text-decoration: none;
+	color: #2a2a2a;
+}
+.device-nav {
+	display: none;
+	color: #f0af00;
+	cursor: pointer;
+	text-align: right;
+	font-size: 25px;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: 15px;
+}
+#donate-btn{
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	height:50px;
+	line-height:50px;
+	padding:0px 50px;
+	background:#f0af00;
+	text-decoration:none;
+	outline:none;
+	color:#FFF;
+	font-size:16px;
+	font-weight:700;
+	text-align:center;
+	text-transform:uppercase;
+	z-index:100;
+}
+
+.donate-btn-container {
+	/* width: '100%'; */
+	background-color: #F0AF00;
+	/* border-radius: 30; */
+	padding-top: 10!important;
+	text-align: center;
+	border-radius: 20px;
+
+}
+
+.donate-btn-container:hover {
+	cursor: pointer
+}
+
+#donate-btn-hamburger {
+	text-decoration:none;
+	outline:none;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:700;
+	padding: 0;
+	text-transform:uppercase;
+	z-index:100;
+}
+
+
+@media only screen and (max-width: 1003px) {
+.device-nav {
+	display: block;
+	top:30px;
+	line-height:normal;
+}
+.navigation{
+	/* line-height:75px;
+	height:75px; */
+	display: none!important;
+}
+.Humburger-Navbar {
+	display: block
+}
+/* .navigation nav {
+	margin: 0;
+	max-height: 0;
+	overflow: hidden;
+	clear: both;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 100;
+	background: #FFF;
+}
+.navigation nav ul {
+	text-align: left;
+}
+.navigation nav ul li {
+	width: 100%;
+}
+.navigation nav ul li a {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+}
+.navigation nav.reveal {
+	max-height: 1170px;
+	width: 100%;
+	z-index: 100;
+} */
+a.donate{
+	position:absolute;
+	top:-50px;
+	right:50px;
+	padding:0px 25px;
+	font-size:15px;
+	height:40px;
+	line-height:40px;
+}
+}
+@media (max-width:360px){
+a.donate{
+	padding:0px 15px;
+}
+.Humburger-Navbar {
+	display: block;
+}
+
+.navigation{
+	/* line-height:75px;
+	height:75px; */
+	display: none!important;
+}
+
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+/*** ### Section Contact ### ***/
+.section-contact{
+	position:relative;
+	background:url(../images/aboutbanner.jpg) no-repeat;
+	background-size:cover;
+	padding:75px 20px 75px 0px;
+    background-position: center;
+}
+.section-contact:after{
+	content:"";
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background:rgba(0,0,0,0.5);
+	height:100%;
+}
+.section-contact .cx_inner{
+	position:relative;
+	z-index:1;
+}
+.section-contact h1{
+	color:#ffc529;
+	font-size:48px;
+	font-weight:700;
+	margin:0px;
+	padding:0px;
+	text-transform:uppercase;
+    line-height:normal;
+    text-align: center;
+    z-index: 100;
+}
+.section-contact h1 span{
+	color:#FFF;
+}
+
+.section-contact h2{
+    color:#ffc529;
+	font-size:36px;
+	font-weight:700;
+	margin:0px;
+	padding:0px;
+	text-transform:uppercase;
+	line-height:normal;
+    text-align: center
+}
+    
+.section-contact p{
+	color:#ffffff;
+	font-size:22px;
+	font-weight:400;
+	margin:0px;
+	padding:20px 0px 40px 0px;
+	/*text-transform:uppercase;*/
+    line-height:normal;
+    text-align: center;
+}
+.section-contact a{	
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	height:50px;
+	line-height:50px;
+	padding:0px 25px;
+	border-radius:5px;
+	background:#f0af00;
+	text-decoration:none;
+	outline:none;
+	color:#ffc529;
+	font-size:16px;
+	font-weight:700;
+	text-align:center;
+	text-transform:uppercase;
+}
+@media (max-width:1024px){
+.section-contact h1{
+	font-size:50px;
+}
+.section-contact p{
+	font-size:20px;
+	padding:20px 0px 30px 0px;
+}
+.section-contact a{	
+	height:40px;
+	line-height:40px;
+	padding:0px 20px;
+	font-size:15px;
+}
+}
+@media (max-width:991px){
+.section-contact{
+	padding:75px 0px;
+}
+.section-contact h1{
+	font-size:40px;
+}
+.section-contact p{
+	font-size:18px;
+	padding:20px 0px;
+}
+}
+@media (max-width:767px){
+.section-contact{
+	padding:50px 0px;
+}
+.section-contact h1{
+	font-size:30px;
+}
+.section-contact p{
+	font-size:16px;
+	padding:20px 0px;
+}
+}
+
+

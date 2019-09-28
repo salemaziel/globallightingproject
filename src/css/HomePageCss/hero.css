@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/*** ### Section One ### ***/
+.section-one{
+	position:relative;
+	/* background:url(../images/banner.png) no-repeat; */
+	background-size:cover;
+	padding:100px 0px;
+}
+.section-one:after{
+	content:"";
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background:rgba(0,0,0,0.5);
+	height:100%;
+}
+.section-one .cx_inner{
+	position:relative;
+	z-index:100;
+}
+.section-one h1{
+	color:#ffc529;
+	font-size:65px;
+	font-weight:700;
+	margin:0px;
+	padding:0px;
+	text-transform:uppercase;
+	line-height:normal;
+}
+.section-one h1 span{
+	color:#FFF;
+}
+.section-one p{
+	color:#ffffff;
+	font-size:22px;
+	font-weight:400;
+	margin:0px;
+	padding:20px 0px 40px 0px;
+	text-transform:uppercase;
+	line-height:normal;
+}
+.section-one a{
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	height:50px;
+	line-height:50px;
+	padding:0px 25px;
+	border-radius:5px;
+	background:#f0af00;
+	text-decoration:none;
+	outline:none;
+	color:#FFF;
+	font-size:16px;
+	font-weight:700;
+	text-align:center;
+	text-transform:uppercase;
+}
+@media (max-width:1024px){
+.section-one h1{
+	font-size:50px;
+}
+.section-one p{
+	font-size:20px;
+	padding:20px 0px 30px 0px;
+}
+.section-one a{
+	height:40px;
+	line-height:40px;
+	padding:0px 20px;
+	font-size:15px;
+}
+}
+@media (max-width:991px){
+.section-one{
+	padding:75px 0px;
+}
+.section-one h1{
+	font-size:40px;
+}
+.section-one p{
+	font-size:18px;
+	padding:20px 0px;
+}
+}
+@media (max-width:767px){
+.section-one{
+	padding:50px 0px;
+}
+.section-one h1{
+	font-size:30px;
+}
+.section-one p{
+	font-size:16px;
+	padding:20px 0px;
+}
+}

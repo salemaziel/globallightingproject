@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/*** ### Section Three ### ***/
+.section-three{
+	position:relative;
+	margin:100px 0px 0px 0px;
+	padding:50px 0px;
+	/* background:url(../images/pink-dots.png) no-repeat; */
+	background-size:cover;
+}
+.section-three h2{
+	color:#f0af00;
+	font-size:13px;
+	font-weight:700;
+	text-transform:uppercase;
+	margin:0px;
+	padding:20px 0px;
+	text-align:center;
+}
+.section-three h2:before{
+	content:"";
+	position:absolute;
+	left:50%;
+	margin-left:-1px;
+	top:-100px;
+	width:2px;
+	height:100px;
+	background:#f0af00;
+}
+.section-three h3{
+	position:relative;
+	margin:0px;
+	padding:0px;
+	color:#203260;
+	font-size:45px;
+	font-weight:700;
+	text-align:center;
+}
+.section-three p{
+	color:#898989;
+	font-size:20px;
+	line-height:25px;
+	font-weight:400;
+	padding:20px 0px;
+	text-align:center;
+	margin:0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.section-three .cx_product_box{
+	position:relative;
+	display:block;
+	margin:auto auto 70px auto;
+	width:100%;
+	max-width:400px;
+	height:260px;
+	line-height:260px;
+	background:#FFF;
+	text-align:center;
+}
+.section-three .cx_product_box img{
+	display:inline-block;
+	vertical-align:top;
+	margin-top:15px;
+	max-width:70%;
+}
+.section-three .cx_product_box .cx_bottom{
+	position:absolute;
+	bottom:-37px;
+	left:30px;
+	right:30px;
+	background:#203260;
+	height:75px;
+	line-height:75px;
+}
+.section-three .cx_product_box p{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+	color:#FFF;
+	font-weight:400;
+	text-align:center;
+	padding:0px 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+@media (max-width:1024px){
+.section-three h2{
+	font-size:12px;
+}
+.section-three h3{
+	font-size:35px;
+}
+.section-three p{
+	font-size:15px;
+	line-height:22px;
+}
+}
+@media (max-width:991px){
+.section-three h3{
+	font-size:30px;
+}
+}
+@media (max-width:767px){
+.section-three h3{
+	font-size:25px;
+}
+}
