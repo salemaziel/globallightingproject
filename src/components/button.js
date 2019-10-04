@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import '../css/main.css'
 
 
-const Button = styled.button = styled.a`
+const Button = styled.Button = styled.a`
   background: transparent;
   border-radius: 3px;
   border: 2px solid #F0AF00;
@@ -17,8 +17,11 @@ const Button = styled.button = styled.a`
 
   ${props => props.primary && css`
     background:#F0AF00;
-    color: #FFF;
+    color: black;
     padding: 0.5em 3em;
+    &:hover {
+      text-decoration:none;
+      color: white;
   `}
 
   ${props => props.donateblk && css`
