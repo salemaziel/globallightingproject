@@ -3,12 +3,9 @@
 	background:#f5f5f5;
 }
 
-/**.section-about container-fluid{
-    
-}**/
-
 .section-about container-fluid row{
-    margin:200px;
+	margin:0px;
+	padding: 10px;
 }
 .section-about .cx_left{
 	position:relative;
@@ -19,7 +16,7 @@
 }
 .section-about .cx_right .cx_list{
 	position:relative;
-	padding:0px 0px 0px 100px;
+	padding:500px 0px 0px 100px;
 	margin-bottom:20px;
 	min-height:80px;
 }
@@ -27,6 +24,10 @@
 	position:absolute;
 	left:0px;
 	width:75px;
+}
+.section-about .cx_about{
+	position: relative;
+	padding:10% 10%;
 }
 .section-about h2{
 	color:#f0af00;

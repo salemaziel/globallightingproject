@@ -1,0 +1,12 @@
+questions to ask pakistan homie:
+
+-how to make active navbar link have different color background/different color text, or some other indication is active page
+
+-how to connect form to netlify
+
+-how to make "Read More" button from About Us component (and other buttons) link to a page using same mechanism as NavLinks (i.e. as quickly)
+
+-how to add blog
+
+-how to display blog posts on home page
+

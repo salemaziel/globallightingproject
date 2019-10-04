@@ -13,6 +13,24 @@
 	line-height: 100px;
 	display: block;
 }
+.nav-link {
+	background: #FFF;
+	color: black;
+	border-radius: 3px;
+	border: 2px solid #FFF;
+}
+.nav-link:hover {
+	background: #F0AF00;
+	color: white;
+	border-radius: 3px;
+	border: 2px solid #F0AF00;
+}
+.nav-link:active {
+	background: #F0AF00;
+	color: white;
+	border-radius: 3px;
+	border: 2px solid #F0AF00;
+}
 .logo-img-fluid {
 	width: 270px;
 	/* height: 60px */
@@ -52,7 +70,7 @@
 
 .list:hover,
 .list:active {
-    color: #F0AF00;
+    color: #FFF;
     text-decoration: none;
     transform: scale(0.9);
     background-position: 100%;
@@ -147,19 +165,28 @@
 	line-height:50px;
 	padding:0px 50px;
 	background:#f0af00;
+	border-radius: 3px;
+	border: 2px solid #F0AF00;
 	text-decoration:none;
 	outline:none;
 	color:#FFF;
-	font-size:16px;
+	font-size:18px;
 	font-weight:700;
 	text-align:center;
 	text-transform:uppercase;
 	z-index:100;
 }
 
+
+#donate-btn:hover{
+	color: yellow;
+	font-weight: 900;
+	font-size: 18px;
+}
+
 .donate-btn-container {
 	/* width: '100%'; */
-	background-color: #F0AF00;
+	background-color: white;
 	/* border-radius: 30; */
 	padding-top: 10!important;
 	text-align: center;
@@ -168,7 +195,8 @@
 }
 
 .donate-btn-container:hover {
-	cursor: pointer
+	cursor: pointer;
+	color:black;
 }
 
 #donate-btn-hamburger {

@@ -1,5 +1,5 @@
 import React from 'react'
-//import styled from 'styled-components'
+import styled from 'styled-components'
 //import { navigate } from 'gatsby-link'
 import 'bootstrap/dist/css/bootstrap.min.css'
 //import '../css/main.scss'
@@ -8,9 +8,9 @@ import '../css/main.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-//const MainWrapper = styled.div`
-//  margin: 0;
-//`;
+const MainWrapper = styled.div`
+  margin: 0;
+`;
 
 export default class ContactUs extends React.Component {
     constructor(props) {
@@ -79,7 +79,7 @@ export default class ContactUs extends React.Component {
                                 <form name='contact' onSubmit={this.handleSubmit} className="contact__form" action="#" >
                                     <div className="row mt-5 mb-4">
                                         <div className="col-12 col-md-6">
-                                            <input type="text" id='fullname' name='fullname' placeholder="Your Name" onChange={this.handleChange} required />
+                                            <input type="text" a id='fullname' name='fullname' placeholder="Your Name" onChange={this.handleChange} required />
                                         </div>
                                         <div className="col-12 col-md-6">
                                             <input type="email" id='email' name='email' placeholder="Your Email" onChange={this.handleChange} required />

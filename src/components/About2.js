@@ -1,9 +1,5 @@
 import React from 'react';
 import '../css/main.css';
-
-import LiveOneImage from '../images/lives-one.png'
-import LiveTwoImage from '../images/lives-two.png'
-import LiveThreeImage from '../images/lives-three.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../css/about2.css'
 
@@ -13,7 +9,7 @@ const About2 = () => (
     <section className="section-about">
         <div className="container">
             <div className="row">
-                <div className="col-md-12 cx_right">
+                <div className="col-md-12 cx_about">
                     <h2>
                         ABOUT OUR ORGANIZATION
                     </h2>
@@ -38,7 +34,7 @@ const About2 = () => (
             <div class="col-lg-3">
               <a href="#" class="thumbnail"><img src="img/dummies/team/1.jpg" alt="" /></a>
               <div>
-                <p><strong>Vincent Austin Jr</strong></p>
+                <p><strong>Jack Dubord</strong></p>
                 <p>
                   CEO - Founder
                 </p>

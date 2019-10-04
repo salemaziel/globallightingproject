@@ -6,11 +6,11 @@ import Layout from '../components/layout';
 
 import '../css/donate.css';
 
-const donatePage = () => (
+const DonatePage = () => (
         <Layout>
                <Donations />
             <NewsLetter />
         </Layout>   
 )
 
-export default donatePage
+export default DonatePage

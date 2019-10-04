@@ -12,8 +12,8 @@ import '../css/main.css';
 const AboutPage = () => (
     <div>
      <Layout>
-       <WhatWeDo />
        <About2 />
+       <WhatWeDo />
        <NewsLetter />
      </Layout>
      </div> 

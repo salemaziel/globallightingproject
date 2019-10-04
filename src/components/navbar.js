@@ -7,10 +7,10 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+    //UncontrolledDropdown,
+    //DropdownToggle,
+    //DropdownMenu,
+    //DropdownItem
 } from 'reactstrap';
 import { Link } from 'gatsby'
 import Logo from '../images/logo.png'
@@ -21,13 +21,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 class NavbarGlobal extends React.Component {
-    state = {
+   state = {
         isOpen: false,
         width: '0px',
     }
     toggle = () => {
         this.setState({
-            isOpen: !this.state.isOpen
+            isOpen: !this.state.isOpen,
         });
     }
     openNav = () => {
@@ -41,10 +41,11 @@ class NavbarGlobal extends React.Component {
             width: '0px',
         })
     }
+
     render() {
         return (
             <div>
-                <Navbar className="navigation" expand="md">
+                <Navbar color="white" expand="md">
                     <div className="container">
                         <NavbarBrand to="/" tag={Link} className="order-0">
                             <img src={Logo} className="logo-img-fluid" />
@@ -52,30 +53,37 @@ class NavbarGlobal extends React.Component {
 
                         <NavbarToggler onClick={this.toggle} style={{ backgroundColor: 'black' }} />
                         <Collapse isOpen={this.state.isOpen} navbar style={{ textAlign: 'center' }}>
+                            
                             <Nav className="mx-auto order-1 " navbar style={{ marginTop: 13, fontWeight: 'bold' }}>
-                                <NavItem>
-                                    <NavLink to="/" tag={Link} style={{ color: 'black', fontSize: 18, fontStyle: 'bold' }}>HOME</NavLink>
+            
+                                <NavItem >
+                                    <NavLink className="nav-link" to="/" tag={Link} style={{ fontSize: 18, fontStyle: 'bold',  }}>HOME</NavLink>
+                                    
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink to="/" tag={Link} style={{ color: 'black', fontSize: 18 }}>
-                                        SERVICES
-                                    <FontAwesomeIcon icon={faAngleDown} style={{ marginLeft: 5 }} />
+                                    <NavLink className="nav-link" to="/about" tag={Link} style={{ fontSize: 18 }}>ABOUT</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/page-2" tag={Link} style={{ fontSize: 18 }}>BLOG</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/faq" tag={Link} style={{ fontSize: 18 }}>
+                                        FAQ
+                                    {/**<FontAwesomeIcon icon={faAngleDown} style={{ marginLeft: 5 }} /> **/}
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink to="/about" tag={Link} style={{ color: 'black', fontSize: 18 }}>ABOUT</NavLink>
+                                    <NavLink className="nav-link" to="/contact" tag={Link} style={{ fontSize: 18 }}>CONTACT</NavLink>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink to="/" tag={Link} style={{ color: 'black', fontSize: 18 }}>BLOG</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink to="/contact" tag={Link} style={{ color: 'black', fontSize: 18 }}>CONTACT</NavLink>
-                                </NavItem>
+                                
                             </Nav>
                         </Collapse>
-                        <div className="order-2">
-                            <Link to="/donate" id="donate-btn">Donate</Link>
-                        </div>
+                         <div className="donate-btn">
+                            <Link to="/donate" id="donate-btn">Donate</Link> 
+                        </div> 
+                       {/** <div className="order-2">
+                            <Button href="/donate" prefetch nav> DONATE </Button>
+                        </div>**/ }
                     </div>
 
 
@@ -120,16 +128,16 @@ class NavbarGlobal extends React.Component {
                         <Link className="list" to="/">
                             HOME
                         </Link>
-                        <Link className="list" to="/">
-                            SERVICES
-                        </Link>
-                        <Link className="list" to="/">
+                        <Link className="list" to="/about">
                             ABOUT
                         </Link>
                         <Link className="list" to="/">
                             BLOG
                         </Link>
-                        <Link className="list" to="/">
+                        <Link className="list" to="/faq">
+                            FAQ
+                        </Link>
+                        <Link className="list" to="/contact">
                             CONTACT
                         </Link>
 
