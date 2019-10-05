@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {
     Collapse,
     Navbar,
@@ -7,10 +7,10 @@ import {
     Nav,
     NavItem,
     NavLink,
-    //UncontrolledDropdown,
-    //DropdownToggle,
-    //DropdownMenu,
-    //DropdownItem
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem
 } from 'reactstrap';
 import { Link } from 'gatsby'
 import Logo from '../images/logo.png'
@@ -39,13 +39,15 @@ class NavbarGlobal extends React.Component {
     closeNav = () => {
         this.setState({
             width: '0px',
-        })
+        });
     }
+
 
     render() {
         return (
-            <div>
-                <Navbar color="white" expand="md">
+        <div>
+            <div className="stickydiv">
+                <Navbar className="navigation" color="white" expand="md" sticky="top" fixed="top">
                     <div className="container">
                         <NavbarBrand to="/" tag={Link} className="order-0">
                             <img src={Logo} className="logo-img-fluid" />
@@ -54,7 +56,7 @@ class NavbarGlobal extends React.Component {
                         <NavbarToggler onClick={this.toggle} style={{ backgroundColor: 'black' }} />
                         <Collapse isOpen={this.state.isOpen} navbar style={{ textAlign: 'center' }}>
                             
-                            <Nav className="mx-auto order-1 " navbar style={{ marginTop: 13, fontWeight: 'bold' }}>
+                            <Nav className="mx-auto order-1 " navbar style={{ marginTop: 18, fontWeight: 'bold' }}>
             
                                 <NavItem >
                                     <NavLink className="nav-link" to="/" tag={Link} style={{ fontSize: 18, fontStyle: 'bold',  }}>HOME</NavLink>
@@ -67,7 +69,7 @@ class NavbarGlobal extends React.Component {
                                     <NavLink className="nav-link" to="/page-2" tag={Link} style={{ fontSize: 18 }}>BLOG</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/faq" tag={Link} style={{ fontSize: 18 }}>
+                                    <NavLink to="/faq" tag={Link} style={{ fontSize: 18 }}>
                                         FAQ
                                     {/**<FontAwesomeIcon icon={faAngleDown} style={{ marginLeft: 5 }} /> **/}
                                     </NavLink>
@@ -85,9 +87,11 @@ class NavbarGlobal extends React.Component {
                             <Button href="/donate" prefetch nav> DONATE </Button>
                         </div>**/ }
                     </div>
-
-
                 </Navbar>
+                </div>
+            <div>
+                
+                </div>  
                 {/* Hamburger Navbar for smaller screens */}
                 <div
                     className="Humburger-Navbar"

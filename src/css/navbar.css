@@ -5,12 +5,21 @@
 .Humburger-Navbar {
 	display: none;
 }
+.stickydiv {
+	margin:0px;
+}	
 
+.stickydiv .sticky-top {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1020;
+}
 .navigation {
 	position: relative;
 	background: #FFF;
 	height: 100px;
-	line-height: 100px;
+	line-height: 30px;
 	display: block;
 }
 .nav-link {
@@ -33,7 +42,7 @@
 }
 .logo-img-fluid {
 	width: 270px;
-	/* height: 60px */
+	margin-bottom: 20px;
 }
 
 .sidenav {
@@ -166,7 +175,7 @@
 	padding:0px 50px;
 	background:#f0af00;
 	border-radius: 3px;
-	border: 2px solid #F0AF00;
+	border: 2px solid #f0af00;
 	text-decoration:none;
 	outline:none;
 	color:#FFF;
@@ -179,9 +188,11 @@
 
 
 #donate-btn:hover{
-	color: yellow;
+	color: ghostwhite;
 	font-weight: 900;
 	font-size: 18px;
+	background: #f8c22e;
+	border: 2px solid #f8c22e;
 }
 
 .donate-btn-container {

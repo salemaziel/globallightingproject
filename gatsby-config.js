@@ -31,12 +31,22 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-theme-blog-core`,
+      // Default options are commented out
+      options: {
+         basePath: `/`, // Root url for all blog posts
+         contentPath: `content/posts`, // Location of blog posts
+         assetPath: `content/assets`, // Location of assets
+         mdx: true, // Configure gatsby-plugin-mdx
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
 
     `gatsby-transformer-remark`,
-    'gatsby-plugin-offline',
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

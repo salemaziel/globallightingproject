@@ -14,6 +14,7 @@ import Navbar from "./navbar"
 import Footer from "./footer"
 
 import "./layout.css"
+import NavbarGlobal from "./navbar"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,7 +32,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Navbar />
+      <NavbarGlobal />
       {children}
       <Footer />
     </>
