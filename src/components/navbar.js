@@ -15,6 +15,7 @@ import {
 import { Link } from 'gatsby'
 import Logo from '../images/logo.png'
 import '../css/navbar.css'
+import '../css/header.css'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -46,8 +47,8 @@ class NavbarGlobal extends React.Component {
     render() {
         return (
         <div>
-            <div className="stickydiv">
-                <Navbar className="navigation" color="white" expand="md" sticky="top" fixed="top">
+            <div className="stickyfixeddiv" fixed>
+                <Navbar className="navigation" color="white" expand="md" fixed="top">
                     <div className="container">
                         <NavbarBrand to="/" tag={Link} className="order-0">
                             <img src={Logo} className="logo-img-fluid" />
@@ -83,22 +84,18 @@ class NavbarGlobal extends React.Component {
                          <div className="donate-btn">
                             <Link to="/donate" id="donate-btn">Donate</Link> 
                         </div> 
-                       {/** <div className="order-2">
-                            <Button href="/donate" prefetch nav> DONATE </Button>
-                        </div>**/ }
                     </div>
                 </Navbar>
-                </div>
-            <div>
-                
+                <div>
                 </div>  
-                {/* Hamburger Navbar for smaller screens */}
+                { /* Hamburger Navbar for smaller screens */}
                 <div
-                    className="Humburger-Navbar"
+                    className="Hamburger-Navbar"
                     style={{
                         margin: '0 auto',
                         maxWidth: 960,
                         padding: '1.45rem 1.0875rem',
+                        color: '#f0af00',
                     }}
                 >
                     <h1 style={{ margin: 0, display: 'inline-block' }}>
@@ -152,7 +149,7 @@ class NavbarGlobal extends React.Component {
                         </div>
 
                     </div>
-
+                  
                     <span
                         className="openNavBtn"
                         style={{ fontSize: '40px', marginTop: 8, cursor: 'pointer', float: 'right' }}
@@ -160,10 +157,13 @@ class NavbarGlobal extends React.Component {
                     >
                         &#9776;
                     </span>
+                  
                 </div>
-            </div>
-        )
-    }
-}
+            </div>    
+    </div>
+         )
+         }
+}    
 
+                        
 export default NavbarGlobal

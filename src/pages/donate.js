@@ -4,7 +4,7 @@ import Donations from '../components/Donations';
 /*import BannerImage from '../images/banner.png';*/
 import Layout from '../components/layout';
 
-import '../css/donate.css';
+//import '../css/donate.css';
 
 const DonatePage = () => (
         <Layout>

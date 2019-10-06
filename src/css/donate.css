@@ -8,7 +8,7 @@
 	padding:0px 0px;
     z-index:77;
 }
-.section-one-donate:after{
+/**.section-one-donate:after{
 	content:"";
 	position:absolute;
 	top:0px;
@@ -16,8 +16,8 @@
 	bottom:0px;
 	left:0px;
 	/**background:rgba(0,0,0,0.5);**/
-	height:100%;
-}
+	/**height:100%;
+}**/
 .section-one-donate .cx_inner_donate{
 	position:relative;
 	z-index:75;

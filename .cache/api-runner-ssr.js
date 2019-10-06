@@ -6,7 +6,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/home/pc/testing-code/globallightingproject/websitefiles-copy-338pm-10.04.2019/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
+      options: {"plugins":[],"name":"Global Lighting Project | Empowering The World","short_name":"Global Lighting Project","description":"Non-profit organization on a mission to aid developing communities with solar-powered LED lights","start_url":"/","background_color":"#fff","theme_color":"#f0af00","display":"standalone","icon":"src/images/logo.png"},
     },{
       plugin: require('/home/pc/testing-code/globallightingproject/websitefiles-copy-338pm-10.04.2019/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
       options: {"plugins":[],"extensions":[".mdx",".md"],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"maxWidth":1380,"linkImagesToOriginal":false}},{"resolve":"gatsby-remark-copy-linked-files"},{"resolve":"gatsby-remark-smartypants"}],"remarkPlugins":[null]},

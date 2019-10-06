@@ -22,18 +22,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Global Lighting Project | Empowering The World`,
+        short_name: `Global Lighting Project`,
+        description: `Non-profit organization on a mission to aid developing communities with solar-powered LED lights`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#fff`,
+        theme_color: `#f0af00`,
+        display: `standalone`,
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: `gatsby-theme-blog-core`,
-      // Default options are commented out
       options: {
          basePath: `/`, // Root url for all blog posts
          contentPath: `content/posts`, // Location of blog posts

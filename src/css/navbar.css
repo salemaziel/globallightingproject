@@ -2,19 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /*** ### Navigation ### ***/
-.Humburger-Navbar {
-	display: none;
+.Hamburger-Navbar {
+	display:none;
+	margin:0px;
 }
-.stickydiv {
+.stickyfixeddiv {
 	margin:0px;
 }	
 
-.stickydiv .sticky-top {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	z-index: 1020;
-}
 .navigation {
 	position: relative;
 	background: #FFF;
@@ -129,6 +124,14 @@
 	width: 100%;
 	text-align: left;
 }
+.navigation .fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+
+}
 .navigation nav ul {
 	padding: 0px;
 	margin: 10px 0px 0px 0px;
@@ -233,7 +236,7 @@
 	height:75px; */
 	display: none!important;
 }
-.Humburger-Navbar {
+.Hamburger-Navbar {
 	display: block
 }
 /* .navigation nav {
@@ -279,7 +282,7 @@ a.donate{
 a.donate{
 	padding:0px 15px;
 }
-.Humburger-Navbar {
+.Hamburger-Navbar {
 	display: block;
 }
 
